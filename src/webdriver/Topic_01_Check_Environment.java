@@ -1,5 +1,6 @@
 package webdriver;
 
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class Topic_01_Check_Environment {
 	@BeforeClass
 	public void beforeClass() {
 		if (osName.contains("Windows")) {
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		} else {
 			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		}
@@ -28,6 +29,8 @@ public class Topic_01_Check_Environment {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 	}
+	
+	
 
 	@Test
 	public void TC_01_Url() {

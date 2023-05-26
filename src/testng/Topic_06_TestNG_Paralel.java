@@ -17,7 +17,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Topic_05_TestNG_Parameter {
+public class Topic_06_TestNG_Paralel {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	By emailTextbox = By.xpath("//*[@id='email']");
